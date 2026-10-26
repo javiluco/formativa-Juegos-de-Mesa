@@ -1,0 +1,72 @@
+:root{
+    --text-color: #0a195f;
+    --bg-color: #f1efd8e0;
+    --sc-color: #340569de;
+
+    --estrategia: #7112ddde;
+    --familiares: #00ccffc7;
+    --cartas: #fa0526d3;
+    --party: #f7df03ce;
+
+    --radio: 18px;
+    --sombra: 0 14px 34px rgba(8,43,69,.10);
+}
+
+
+/* * { box-sizing: border-box; } */
+html { scroll-behavior: smooth; }
+body { 
+    margin: 0; 
+    background: var(--bg-color); 
+    color: var(--texto-color); 
+    font-family: "Bricolage Grotesque", sans-serif; 
+    line-height: 1.6; 
+}
+a { color: inherit; }
+/* img { max-width: 100%; height: auto; display: block; } */
+
+
+.container{
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.bg-navbar {
+    background-color: rgba(8,43,69,.10);
+    padding: 1.5em 0;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2rem;
+}
+
+.navbar-brand img {
+    width: 8em;
+}
+
+.navbar-nav{
+    /* background-color: rgba(3, 3, 5, 0.41); */
+    padding: 1em;
+    border-radius: 0.3em;
+}
+.nav-link{
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.3em;
+    color: var(--texto-color);
+} 
+.nav-link:hover{
+    background-color: rgb(5, 5, 97);
+    color: white;
+    border-radius: 0.5em;
+}
