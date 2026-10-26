@@ -1,40 +1,72 @@
-:root{
+:root {
     --text-color: #0a195f;
-    --bg-color: #f1efd8e0;
+    --bg-color: #e4e4e2e0;
     --sc-color: #340569de;
 
-    --estrategia: #7112ddde;
-    --familiares: #00ccffc7;
-    --cartas: #fa0526d3;
-    --party: #f7df03ce;
+    --estrategia: #6961ff;
+    --familiares: #84B6F4;
+    --cartas: #FDCAE1;
+    --party: #ffb861;
 
     --radio: 18px;
-    --sombra: 0 14px 34px rgba(8,43,69,.10);
+    --sombra: 0 14px 34px rgba(8, 43, 69, .10);
+
+    --descuento: oklch(75.523% 0.15559 63.576);
+    --borde: 2px solid var(--tinta);
 }
 
 
 /* * { box-sizing: border-box; } */
-html { scroll-behavior: smooth; }
-body { 
-    margin: 0; 
-    background: var(--bg-color); 
-    color: var(--texto-color); 
-    font-family: "Bricolage Grotesque", sans-serif; 
-    line-height: 1.6; 
+html {
+    scroll-behavior: smooth;
 }
-a { color: inherit; }
+
+body {
+    margin: 0;
+    background: var(--bg-color);
+    color: var(--texto-color);
+    font-family: "Bricolage Grotesque", sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+}
+
 /* img { max-width: 100%; height: auto; display: block; } */
 
 
-.container{
-    width: 95%;
+.container {
+    width: 90%;
     margin-right: auto;
     margin-left: auto;
 }
 
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5em;
+    margin: 0 0.1em;
+    border-radius: 0.5em;
+}
+
+.btn-primary {
+    color: white;
+    /* background-color: #4f2d6eb3; */
+    background-color: #070aa0b3;
+
+}
+
+.btn-danger {
+    color: white;
+    background-color: #e76f51;
+}
+
+/* Nav */
 .bg-navbar {
-    background-color: rgba(8,43,69,.10);
-    padding: 1.5em 0;
+    background-color: rgb(61, 5, 114);
+    padding: 1em 0;
 }
 
 .navbar {
@@ -51,22 +83,189 @@ a { color: inherit; }
 }
 
 .navbar-brand img {
-    width: 8em;
+    width: 7em;
 }
 
-.navbar-nav{
+.navbar-nav {
     /* background-color: rgba(3, 3, 5, 0.41); */
-    padding: 1em;
     border-radius: 0.3em;
 }
-.nav-link{
+
+.nav-link {
     text-decoration: none;
     display: inline-block;
     padding: 0.3em;
-    color: var(--texto-color);
-} 
-.nav-link:hover{
+    color: white;
+}
+
+.nav-link:hover {
     background-color: rgb(5, 5, 97);
     color: white;
     border-radius: 0.5em;
+}
+
+
+.sc-title {
+    font-size: 35px;
+    text-align: center;
+    animation: subir 650ms ease both;
+}
+
+.p-title {
+    font-size: 50px;
+}
+
+/* Tarjetas */
+.card {
+    color: white;
+    overflow: hidden;
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+    position: relative;
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+}
+
+.card.estrategia {
+    background-color: var(--estrategia);
+}
+
+.card.familiares {
+    background-color: var(--familiares);
+}
+
+.card.cartas {
+    background-color: var(--cartas);
+}
+
+.card.party {
+    background-color: var(--party);
+}
+
+.card-img {
+    width: 100%;
+    height: 300px;          
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 1em;
+}
+
+.card-body h3 {
+    font-size: 1.5em;
+    margin: 1em 0;
+    font-weight: 500;
+}
+
+.card-body p {
+    font-weight: 300;
+}
+
+/* Footer */
+.bg-footer {
+    background-color: #302C2D;
+    color: white;
+}
+
+.bg-footer p {
+    margin: 0;
+    padding: 1em o;
+    text-align: center;
+}
+
+
+@keyframes flotar {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* La ficha sube y baja de forma permanente. */
+.flotar {
+    animation-name: flotar;
+    /* Nombre del efecto. */
+    animation-duration: 3s;
+    /* Cada ciclo dura tres segundos. */
+    animation-timing-function: ease-in-out;
+    /* Movimiento suave. */
+    animation-iteration-count: infinite;
+    /* Se repite indefinidamente. */
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* El elemento con clase 'aparecer' ejecuta el efecto una vez. */
+.aparecer {
+    animation-name: aparecer;
+    animation-duration: 2s;
+}
+
+@keyframes sello {
+
+    0%,
+    100% {
+        transform: rotate(6deg);
+    }
+
+    50% {
+        transform: rotate(-6deg) scale(1.08);
+    }
+}
+
+.descuento {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    background: var(--descuento);
+    border: var(--borde);
+    border-radius: 999px;
+    padding: 6px 12px;
+    font-weight: 800;
+    font-size: 16px;
+    animation: sello 1.6s ease-in-out infinite;
+}
+
+@keyframes subir { from {opacity:0;transform:translateY(18px);} to {opacity:1;transform:translateY(0);} }
+
+@media (min-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .categorias {
+        display: flex;
+        gap: 1em;
+    }
+
+    .main-container {
+        display: flex;
+        gap: 3em;
+    }
+
+    .container-footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+    }
 }
