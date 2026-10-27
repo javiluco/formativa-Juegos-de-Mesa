@@ -12,7 +12,7 @@
     --sombra: 0 14px 34px rgba(8, 43, 69, .10);
 
     --descuento: oklch(75.523% 0.15559 63.576);
-    --borde: 2px solid var(--tinta);
+    --borde: 2px solid var(--tinta);   
 }
 
 
@@ -177,6 +177,31 @@ a {
     text-align: center;
 }
 
+.banner {
+  position: relative;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10%;
+}
+.banner p{
+    margin: 0;
+    padding: 0;
+}
+
+.banner h1{
+    margin: 0;
+    padding: 0;
+}
+
+.banner_bajada {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+#juegos-party{
+    background: var(--party);
+}
 
 @keyframes flotar {
     0% {
