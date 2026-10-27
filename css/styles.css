@@ -206,6 +206,9 @@ a {
 #juegos-familiares{
     background: var(--familiares);
 }
+#juegos-estrategia{
+    background: var(--estrategia);
+}
 
 @keyframes flotar {
     0% {
