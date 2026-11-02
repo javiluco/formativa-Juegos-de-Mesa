@@ -92,15 +92,6 @@ a {
     font-size: 50px;
 }
 
-/* Tarjetas */
-/* .card {
-    color: white;
-    overflow: hidden;
-    border-radius: 0.5em;
-    margin-bottom: 1em;
-    position: relative;
-    transition: box-shadow 0.3s ease;
-} */
 
 .card:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
