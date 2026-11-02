@@ -11,96 +11,111 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
         rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
 </head>
 
 <body>
-    <header>
-        <div class="bg-navbar">
-            <div class="container">
-                <div class="navbar">
-                    <a href="/" class="navbar-brand">
-                        <img src="img/logo2.png" alt="" class="flotar">
-                    </a>
-                    <nav class="navbar-nav">
-                        <a href="estrategia.html" class="nav-link">Estrategia</a>
-                        <a href="familiares.html" class="nav-link">Familiares</a>
-                        <a href="cartas.html" class="nav-link">Cartas</a>
-                        <a href="juegos-party.html" class="nav-link">Juegos Party</a>
-                    </nav>
+    <header class="bg-navbar py-2">
 
-                </div>
+        <ul class="nav justify-content-end container">
+            <li class="me-auto">
+                <a href="index.html">
+                    <img src="img/logo2.png" alt="Logo" class="img-logo flotar" style="max-height: 40px;">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="estrategia.html" class="nav-link">Estrategia</a>
+            </li>
+            <li class="nav-item">
+                <a href="familiares.html" class="nav-link">Familiares</a>
+            </li>
+            <li class="nav-item">
+                <a href="cartas.html" class="nav-link">Cartas</a>
+            </li>
+            <li class="nav-item">
+                <a href="juegos-party.html" class="nav-link">Juegos Party</a>
+            </li>
+        </ul>
 
+    </header>
+
+    <main class="container">
+        <div class="row align-items-center">
+
+            <div class="col-12 md:col-6">
+                <h3>TIENDA DE JUEGOS DE MESA</h3>
+                <h1 class="p-title">Encuentra tus Juegos Favoritos en PlayHead</h1>
+                <p>
+                    Descubre los mejores juegos de estrategia, familiares, de cartas y party games con ofertas
+                    exclusivas. Explora nuestro catálogo online o visítanos en nuestra tienda Av. Providencia 50,
+                    Santiago.
+                </p>
+                <p>
+                    ¡Síguenos en
+                    <a href="https://instagram.com/playhead" target="_blank" class="link-social">Instagram</a> y
+                    <a href="https://facebook.com/playhead-tienda" target="_blank" class="link-social">Facebook</a> para
+                    enterarte de novedades y eventos!
+                </p>
+            </div>
+
+            <div
+                class="col-12 md:col-6 d-flex justify-content-center md:justify-content-end align-items-center mt-4 md:mt-0">
+                <img class="img-main img-fluid" src="img/juegos-de-mesa.png" alt="Juegos de mesa PlayHead">
             </div>
 
         </div>
-    </header>
-
-    <main class="container main-container">
-
-        <div>
-            <h3 class="">TIENDA DE JUEGOS DE MESA</h3>
-            <h1 class="p-title">Encuentra tus Juegos Favoritos en PlayHead</h1>
-            <p>
-                Descubre los mejores juegos de estrategia, familiares, de cartas y party games con ofertas exclusivas.
-                Explora nuestro catálogo online o visítanos en nuestra tienda Av. Providencia 50, Santiago. 
-            </p>
-            <p>
-                ¡Síguenos en
-                <a href="https://instagram.com/playhead" target="_blank" class="link-social">Instagram</a> y
-                <a href="https://facebook.com/playhead-tienda" target="_blank" class="link-social">Facebook</a> para
-                enterarte de novedades y eventos!
-            </p>
-        </div>
-
-        <div>
-            <img src="img/juegos-de-mesa.png" alt="">
-        </div>
-
     </main>
-    <h2 class="sc-title">CATÁLOGO</h2>
-    <section class="categorias aparecer">
-        <div class="container categorias">
-            <article class="card estrategia">
-                <img src="/img/estrategia.jpeg" alt="" class="card-img">
-                <span class="descuento">-25%</span>
-                <div class="card-body">
-                    <h3>Estrategia</h3>
-                    <p>Planifica, negocia y conquista. Ponte a prueba con estos juegos.</p>
-                    <a class="btn btn-primary" href="/estrategia.html">Ver mas juegos</a>
-                </div>
-            </article>
+    <div class="container aparecer ">
+        <h2 class="sc-title">CATÁLOGO</h2>
+        <div class="row align-items-center">
 
-            <article class="card familiares">
-                <img src="/img/familiares2.png" alt="" class="card-img">
-                <div class="card-body">
-                    <h3>Familiares</h3>
-                    <p>Para jugar con toda la Familia. Apta para todas las edades.</p>
-                    <a class="btn btn-primary" href="/familiares.html">Ver mas juegos</a>
-                </div>
-            </article>
-
-            <article class="card cartas">
-                <img src="/img/cartas2.png" alt="" class="card-img">
-                <div class="card-body">
-                    <h3>Cartas</h3>
-                    <p>Partidas rápidas en cualquier mesa. Gran variedad de juegos</p>
-                    <a class="btn btn-primary" href="/cartas.html">Ver mas juegos</a>
-                </div>
-            </article>
-
-            <article class="card party">
-                <img src="/img/party2.png" alt="" class="card-img">
-                <div class="card-body">
-                    <h3>Juegos Party</h3>
-                    <p>Risas y entretencion para grupos grandes.</p>
-                    <a class="btn btn-primary" href="/juegos-party.html">Ver mas juegos</a>
-                </div>
-            </article>
-
+            <div class="col">
+                <section class="card estrategia theme-accent" style="max-width: 320px">
+                    <img src="/img/estrategia.jpeg" class="card-img-top" alt="...">
+                    <span class="descuento">-25%</span>
+                    <div class="card-body ">
+                        <h4 class="card-title">Estrategia</h4>
+                        <p class="card-text">Planifica, negocia y conquista. Ponte a prueba con estos juegos.</p>
+                        <a href="/estrategia.html" class="btn-solid theme-accent">Ver mas juegos</a>
+                    </div>
+                </section>
+            </div>
+            <div class="col">
+                <section class="card familiares theme-primary" style="max-width: 320px">
+                    <img src="/img/familiares2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">Familiares</h4>
+                        <p class="card-text">Para jugar con toda la Familia. Apta para todas las edades.</p>
+                        <a href="/familiares.html" class="btn-solid theme-accent">Ver mas juegos</a>
+                    </div>
+                </section>
+            </div>
+            <div class="col">
+                <section class="card cartas theme-danger" style="max-width: 320px">
+                    <img src="/img/cartas2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">Cartas</h4>
+                        <p class="card-text">Partidas rápidas en cualquier mesa. Gran variedad de juegos.</p>
+                        <a href="/cartas.html" class="btn-solid theme-accent">Ver mas juegos</a>
+                    </div>
+                </section>
+            </div>
+            <div class="col">
+                <section class="card party theme-warning" style="max-width: 320px">
+                    <img src="/img/party2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">Juegos Party</h4>
+                        <p class="card-text">Risas y entretencion para grupos grandes..</p>
+                        <a href="/juegos-party.html" class="btn-solid theme-accent">Ver mas juegos</a>
+                    </div>
+                </section>
+            </div>
 
         </div>
 
-    </section>
+    </div>
 
     <footer class="bg-footer">
         <div class="container container-footer">
@@ -110,6 +125,10 @@
 
     </footer>
 
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
