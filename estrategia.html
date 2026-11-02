@@ -18,28 +18,43 @@
 </head>
 
 <body>
-    <header class="bg-navbar py-2">
-
-        <ul class="nav justify-content-end container">
-            <li class="me-auto">
-                <a href="index.html">
-                    <img src="img/logo2.png" alt="Logo" class="img-logo flotar" style="max-height: 40px;">
+    <header>
+        <nav class="navbar lg:navbar-expand bg-navbar py-2" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo2.png" alt="PLAYHEAD" class="img-logo flotar"
+                        style="max-height: 40px; width: auto;">
                 </a>
-            </li>
-            <li class="nav-item">
-                <a href="estrategia.html" class="nav-link">Estrategia</a>
-            </li>
-            <li class="nav-item">
-                <a href="familiares.html" class="nav-link">Familiares</a>
-            </li>
-            <li class="nav-item">
-                <a href="cartas.html" class="nav-link">Cartas</a>
-            </li>
-            <li class="nav-item">
-                <a href="juegos-party.html" class="nav-link">Juegos Party</a>
-            </li>
-        </ul>
-
+                <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer"
+                    data-bs-target="#navbarNavMenu" aria-controls="navbarNavMenu" aria-expanded="false"
+                    aria-label="Abrir menú">
+                    <span class="navbar-toggler-icon" aria-hidden="true"></span>
+                </button>
+                <dialog class="drawer drawer-end bg-navbar" tabindex="-1" id="navbarNavMenu"
+                    aria-labelledby="navbarNavMenuLabel">
+                    <div class="drawer-header">
+                        <h5 class="drawer-title" id="navbarNavMenuLabel">Menú</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="drawer-body">
+                        <ul class="navbar-nav lg:ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="estrategia.html">Estrategia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="familiares.html">Familiares</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="cartas.html">Cartas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="juegos-party.html">Juegos Party</a>
+                            </li>
+                        </ul>
+                    </div>
+                </dialog>
+            </div>
+        </nav>
     </header>
 
 
@@ -55,9 +70,10 @@
         <section class="aparecer container py-4">
             <div class="row row-cols-1 md:row-cols-2 xl:row-cols-3 g-4">
 
-               <div class="col d-flex justify-content-center">
+                <div class="col d-flex justify-content-center">
                     <article class="card estrategia theme-accent">
-                        <img src="/img/estrategia/dominio.png" class="card-img-top card-img " alt="Dominio de los Elementos">
+                        <img src="/img/estrategia/dominio.png" class="card-img-top card-img "
+                            alt="Dominio de los Elementos">
                         <span class="descuento">-10%</span>
                         <div class="card-body card-body-mesure ">
                             <h4 class="card-title">Dominio de los Elementos</h4>
@@ -69,7 +85,8 @@
                                 batalla subirás de nivel y accederás a habilidades nuevas y extraordinarias, y también a
                                 los poderosos Campeones elementales. Cuando todo haya terminado, ¿te habrás hecho con la
                                 victoria?</p>
-                            <button class="btn btn-primary" style="margin-top: auto; align-self: flex-start;">Comprar</button>
+                            <button class="btn btn-primary"
+                                style="margin-top: auto; align-self: flex-start;">Comprar</button>
                         </div>
                     </article>
                 </div>
@@ -85,14 +102,16 @@
                                 nervios de acero. Turno a turno, trataréis de descubrir qué cables tienen los demás para
                                 cortarlos de forma segura. Contáis con las mejores herramientas, que os facilitarán el
                                 trabajo, pero cada vez las misiones serán más difíciles…</p>
-                            <button class="btn btn-primary" style="margin-top: auto; align-self: flex-start;">Comprar</button>
+                            <button class="btn btn-primary"
+                                style="margin-top: auto; align-self: flex-start;">Comprar</button>
                         </div>
                     </article>
                 </div>
 
                 <div class="col d-flex justify-content-center">
-                    <article class="card estrategia theme-accent " >
-                        <img src="/img/estrategia/criaturas.png" class="card-img-top card-img" alt="Criaturas de las Sombras">
+                    <article class="card estrategia theme-accent ">
+                        <img src="/img/estrategia/criaturas.png" class="card-img-top card-img"
+                            alt="Criaturas de las Sombras">
                         <div class="card-body card-body-mesure ">
                             <h4 class="card-title">Criaturas De Las Sombras</h4>
                             <p>$35.000</p>
@@ -102,7 +121,8 @@
                                 suerte, evolucionarás a tu Forma Sombra. Todo en una sola misión para convertirte en el
                                 mejor Shadow Caster. ¡El último jugador en mantenerse en pie tras esta batalla
                                 supernatural gana la partida!</p>
-                            <button class="btn btn-primary" style="margin-top: auto; align-self: flex-start;">Comprar</button>
+                            <button class="btn btn-primary"
+                                style="margin-top: auto; align-self: flex-start;">Comprar</button>
                         </div>
                     </article>
                 </div>

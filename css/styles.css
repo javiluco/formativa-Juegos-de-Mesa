@@ -209,6 +209,18 @@ a {
     justify-self: end;
 }
 
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+    background-color: rgb(5, 5, 97);
+    color: white;
+    border-radius: 0.5em;
+}
+.navbar .navbar-nav .nav-link.active { 
+    font-weight: 700; 
+}
+.drawer-title { 
+    color: white; 
+}
 
 @keyframes flotar {
     0% {
