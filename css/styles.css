@@ -12,7 +12,7 @@
     --sombra: 0 14px 34px rgba(8, 43, 69, .10);
 
     --descuento: oklch(75.523% 0.15559 63.576);
-    --borde: 2px solid var(--tinta);
+    --borde: 2px rgba(8, 43, 69, .10);
 }
 
 
