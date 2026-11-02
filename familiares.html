@@ -13,28 +13,34 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
         rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
 </head>
 
 <body>
-    <header>
-        <div class="bg-navbar">
-            <div class="container">
-                <div class="navbar">
-                    <a href="/" class="navbar-brand">
-                        <img src="img/logo2.png" alt="" class="flotar">
-                    </a>
-                    <nav class="navbar-nav">
-                        <a href="estrategia.html" class="nav-link">Estrategia</a>
-                        <a href="familiares.html" class="nav-link">Familiares</a>
-                        <a href="cartas.html" class="nav-link">Cartas</a>
-                        <a href="juegos-party.html" class="nav-link">Juegos Party</a>
-                    </nav>
+    <header class="bg-navbar py-2">
 
-                </div>
+        <ul class="nav justify-content-end container">
+            <li class="me-auto">
+                <a href="index.html">
+                    <img src="img/logo2.png" alt="Logo" class="img-logo flotar" style="max-height: 40px;">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="estrategia.html" class="nav-link">Estrategia</a>
+            </li>
+            <li class="nav-item">
+                <a href="familiares.html" class="nav-link">Familiares</a>
+            </li>
+            <li class="nav-item">
+                <a href="cartas.html" class="nav-link">Cartas</a>
+            </li>
+            <li class="nav-item">
+                <a href="juegos-party.html" class="nav-link">Juegos Party</a>
+            </li>
+        </ul>
 
-            </div>
-
-        </div>
     </header>
 
     <main>
@@ -45,72 +51,71 @@
         </section>
 
         <h2 class="sc-title">CATÁLOGO</h2>
-        <section class="categorias aparecer container">
-            <div class="container categorias">
-                <article class="card familiares">
-                    <img src="/img/familiar/smart.png" alt="" class="card-img">
-                    <span class="descuento">-5%</span>
-                    <div class="card-body">
-                        <h3>Smart 10 - Familiar</h3>
-                        <p>$20.000</p>
-                        <p>La agilidad de Smart 10 ahora también adaptada a los miembros más jóvenes para que las
-                            partidas sean para toda la familia.
+        <section class="aparecer container py-4">
+            <div class="row row-cols-1 md:row-cols-2 xl:row-cols-3 g-4">
 
-                            Smart10 es un juego de preguntas donde los jugadores no deberán esperar demasiado su turno.
-                            Las preguntas ofrecen 10 posibles respuestas y todos los jugadores tendrán la oportunidad de
-                            contestar en cada una de las preguntas.</p>
-                        <button class="btn btn-primary">Comprar</button>
-                    </div>
-                </article>
+                <div class="col d-flex justify-content-center">
+                    <article class="card familiares theme-primary">
+                        <img src="/img/familiar/smart.png" class="card-img-top card-img " alt="Smart 10 - Familiar">
+                        <span class="descuento">-5%</span>
+                        <div class="card-body card-body-mesure ">
+                            <h4 class="card-title">Smart 10 - Familiar</h4>
+                            <p>$20.000</p>
+                            <p class="card-text">La agilidad de Smart 10 ahora también adaptada a los miembros más
+                                jóvenes para que las
+                                partidas sean para toda la familia.
 
-                <article class="card familiares">
-                    <img src="/img/familiar/Got Five.png" alt="" class="card-img">
-                    <div class="card-body">
-                        <h3>Got Five</h3>
-                        <p>$30.000</p>
-                        <p>¡Descifra los números ocultos antes que los demás!
+                                Smart10 es un juego de preguntas donde los jugadores no deberán esperar demasiado su
+                                turno.
+                                Las preguntas ofrecen 10 posibles respuestas y todos los jugadores tendrán la
+                                oportunidad de
+                                contestar en cada una de las preguntas.</p>
+                            <button class="btn btn-primary"
+                                style="margin-top: auto; align-self: flex-start;">Comprar</button>
+                        </div>
+                    </article>
+                </div>
 
-                            En Got Five!, cada jugador deberá resolver un rompecabezas lógico utilizando deducción,
-                            observación y pistas compartidas para descubrir los cinco números secretos escondidos en su
-                            soporte. El desafío está en que puedes ver las fichas de todos los demás… excepto las tuyas.
-                        </p>
-                        <button class="btn btn-primary">Comprar</button>
-                    </div>
-                </article>
+                <div class="col d-flex justify-content-center">
+                    <article class="card familiares theme-primary">
+                        <img src="/img/familiar/Got Five.png" class="card-img-top card-img" alt="Got Five">
+                        <div class="card-body">
+                            <h4 class="card-title">Got Five</h4>
+                            <p>$30.000</p>
+                            <p class="card-text">¡Descifra los números ocultos antes que los demás!
 
-                <article class="card familiares">
-                    <img src="/img/familiar/meme.png" alt="" class="card-img">
-                    <div class="card-body">
-                        <h3>What Do You Meme? Edición Familiar</h3>
-                        <p>$10.000</p>
-                        <p>¡Tu juego de memes favorito ahora para toda la familia!
-                            Compite por crear el meme más divertido combinando cartas de Oración con la carta de Foto
-                            que esté en juego.
-                            Contenido:
-                            300 cartas de Oración
-                            65 cartas de Foto
-                            1 Caballete</p>
-                        <button class="btn btn-primary">Comprar</button>
-                    </div>
-                </article>
+                                En Got Five!, cada jugador deberá resolver un rompecabezas lógico utilizando deducción,
+                                observación y pistas compartidas para descubrir los cinco números secretos escondidos en
+                                su
+                                soporte. El desafío está en que puedes ver las fichas de todos los demás… excepto las
+                                tuyas.
+                            </p>
+                            <button class="btn btn-primary"
+                                style="margin-top: auto; align-self: flex-start;">Comprar</button>
+                        </div>
+                    </article>
+                </div>
 
-                <!-- <article class="card familiares">
-                    <img src="/img/familiar/cathood.png" alt="" class="card-img">
-                    <div class="card-body">
-                        <h3>Cathood - Family and Friends</h3>
-                        <p>$9.000</p>
-                        <p>En Family & Friends, los gatos crecen, maduran y sus relaciones evolucionan. Esta expansión
-                            incluye:
-                            Cartas de Evento
-                            Cartas de Conocimiento
-                            Cartas de Bonificación
-                            Cartas de Gatitos
-                            Además, incorpora 2 nuevas losetas y 8 cubitos de un recurso inédito, lo que añade nuevas
-                            capas estratégicas a cada partida.</p>
-                        <button class="btn btn-primary">Comprar</button>
-                    </div>
-                </article> -->
-
+                <div class="col d-flex justify-content-center">
+                    <article class="card familiares theme-primary">
+                        <img src="/img/familiar/meme.png" class="card-img-top card-img"
+                            alt="What Do You Meme? Edición Familiar">
+                        <div class="card-body card-body-mesure">
+                            <h4 class="card-title">What Do You Meme? Edición Familiar</h4>
+                            <p>$10.000</p>
+                            <p class="card-text">¡Tu juego de memes favorito ahora para toda la familia!
+                                Compite por crear el meme más divertido combinando cartas de Oración con la carta de
+                                Foto
+                                que esté en juego.
+                                Contenido:
+                                300 cartas de Oración
+                                65 cartas de Foto
+                                1 Caballete</p>
+                            <button class="btn btn-primary"
+                                style="margin-top: auto; align-self: flex-start;">Comprar</button>
+                        </div>
+                    </article>
+                </div>
 
             </div>
 
