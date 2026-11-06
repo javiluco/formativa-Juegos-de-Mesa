@@ -90,8 +90,53 @@ a {
 
 .p-title {
     font-size: 50px;
+    font-family: "Bricolage Grotesque", sans-serif;
 }
 
+.inicio main.container {
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.inicio main h3 {
+    font-size: .95rem;
+    font-weight: 700;
+    letter-spacing: .12em;
+    color: var(--estrategia);
+}
+
+.inicio .p-title {
+    margin-bottom: 1rem;
+    line-height: 1.1;
+}
+
+.inicio .img-main {
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+}
+.link-social {
+    font-weight: 600;
+    color: rgb(61, 5, 114);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+}
+
+.inicio .card-section {
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.inicio .card-section:hover {
+    transform: translateY(-4px);
+}
+
+.inicio .card-section .card-title {
+    font-weight: 700;
+}
+
+/* Texto oscuro en todas las tarjetas para que se lea mejor */
+.inicio .card-section {
+    color: var(--text-color);
+}
 
 .card:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
@@ -220,6 +265,54 @@ a {
 }
 .drawer-title { 
     color: white; 
+}
+
+.bg-color {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 64px);
+    padding: 2rem 1rem;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 15% 20%, var(--estrategia) 0, transparent 35%),
+        radial-gradient(circle at 85% 15%, var(--cartas) 0, transparent 35%),
+        radial-gradient(circle at 80% 85%, var(--party) 0, transparent 35%),
+        radial-gradient(circle at 20% 90%, var(--familiares) 0, transparent 35%),
+        var(--bg-color);
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+/* LOGIN */
+.bg-logo{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    background-color: var(--sc-color);
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+    width: 220px;
+}
+
+.auth-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 550px;
+}
+
+.bg-logo img{
+    width: 180px;
+    padding: 6px 0px;
+}
+.auth-title{
+    margin-bottom: .25rem;
+    margin-top: 1rem;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--text-color); 
+    text-align: center;
 }
 
 @keyframes flotar {
