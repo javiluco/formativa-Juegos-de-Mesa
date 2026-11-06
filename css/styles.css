@@ -117,7 +117,7 @@ a {
 .link-social {
     font-weight: 600;
     color: rgb(61, 5, 114);
-    text-decoration-thickness: 2px;
+    text-decoration-thickness: 1.5px;
     text-underline-offset: 3px;
 }
 
