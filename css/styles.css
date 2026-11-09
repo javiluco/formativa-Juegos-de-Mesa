@@ -342,6 +342,75 @@ a {
     color: #ffffff !important;
 }
 
+/* INVENTARIO */
+
+.inventario-resumen {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: .75rem;
+}
+
+.inventario-resumen > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .9rem 1rem;
+    text-align: center;
+    background: rgba(105, 97, 255, .1);
+    border-radius: 16px;
+}
+
+.resumen-num {
+    font-size: 1.35rem;
+    font-weight: 800;
+    color: rgb(61, 5, 114);
+}
+
+.resumen-txt {
+    font-size: .8rem;
+    color: rgba(10, 25, 95, .65);
+}
+
+.inventario-btn {
+    padding: .35rem .8rem;
+    font-size: .85rem;
+    font-weight: 700;
+    color: rgb(61, 5, 114);
+    background: rgba(105, 97, 255, .1);
+    border: 0;
+    border-radius: 10px;
+    transition: background-color .2s ease;
+}
+
+.inventario-btn:hover {
+    background: rgba(105, 97, 255, .2);
+}
+
+.inventario-btn.peligro {
+    color: #d93036;
+    background: rgba(229, 72, 77, .1);
+}
+
+.inventario-btn.peligro:hover {
+    background: rgba(229, 72, 77, .2);
+}
+
+.compra-img {
+    flex: 0 0 auto;
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.inventario-sin-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    background: rgba(105, 97, 255, .1);
+}
+
 @keyframes flotar {
     0% {
         transform: translateY(0);
