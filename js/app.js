@@ -49,19 +49,43 @@ if (btnLogout) {
     });
 }
 
-const formLogin = document.querySelector('form');
+const formulario = document.querySelector('#formulario-login');
 
-if (formLogin) {
-    formLogin.addEventListener('submit', (e) => {
-        e.preventDefault();
+formulario.addEventListener('submit', function (event) {
+    event.preventDefault();
 
-        const emailInput = document.getElementById('inputEmail1').value;
-        const passwordInput = document.getElementById('inputPassword1').value;
+    const inputEmail = document.querySelector('#inputEmail');
+    const inputPassword = document.querySelector('#inputPassword');
+    let esValido = true;
 
+    inputEmail.classList.remove('is-invalid', 'mostrar-vacio', 'mostrar-formato');
+
+    const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!inputEmail.value.trim()) {
+        inputEmail.classList.add('is-invalid', 'mostrar-vacio');
+        esValido = false;
+    } else if (!regexEmail.test(inputEmail.value.trim())) {
+        inputEmail.classList.add('is-invalid', 'mostrar-formato');
+        esValido = false;
+    }
+
+    inputPassword.classList.remove('is-invalid', 'mostrar-vacio', 'mostrar-formato');
+
+    const passwordValida = /^(?=.*[A-Z])(?=.*\d).{6,18}$/;
+
+    if (!inputPassword.value.trim()) {
+        inputPassword.classList.add('is-invalid', 'mostrar-vacio');
+        esValido = false;
+    } else if (!passwordValida.test(inputPassword.value)) {
+        inputPassword.classList.add('is-invalid', 'mostrar-formato');
+        esValido = false;
+    }
+
+    if (esValido) {
         const usuariosDB = JSON.parse(localStorage.getItem('usuariosDB')) || [];
-
         const usuarioEncontrado = usuariosDB.find(
-            u => u.email === emailInput && u.password === passwordInput
+            u => u.email === inputEmail.value && u.password === inputPassword.value
         );
 
         if (usuarioEncontrado) {
@@ -80,7 +104,10 @@ if (formLogin) {
                 window.location.href = 'perfil.html';
             }
         } else {
-            alert('Credenciales incorrectas');
+            alert('Usuario no registrado');
         }
-    });
-}
+
+
+
+    }
+});
